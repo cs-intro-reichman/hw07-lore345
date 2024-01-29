@@ -4,9 +4,9 @@ public class HashTagTokenizer {
 
     public static void main(String[] args) {
 
-		String hashTag = args[0];
+        String hashTag = args[0];
         String[] dictionary = readDictionary("dictionary.txt");
-		breakHashTag(hashTag, dictionary);
+        breakHashTag(hashTag, dictionary);
     }
 
     public static String[] readDictionary(String fileName) {
@@ -16,7 +16,7 @@ public class HashTagTokenizer {
         In in = new In(fileName);
         while (!in.isEmpty()) {
             dictionary[count] = in.readString();
-
+            count++;
         }
 
         // Your code here
