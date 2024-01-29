@@ -11,10 +11,11 @@ public class SpellChecker {
 	}
 
 	public static String tail(String str) {
-		// Your code goes here
+		return  null;
 	}
 
 	public static int levenshtein(String word1, String word2) {
+		return 0;
 		// Your code goes here
 	}
 
@@ -29,7 +30,8 @@ public class SpellChecker {
 	}
 
 	public static String spellChecker(String word, int threshold, String[] dictionary) {
-		// Your code goes here
+return  null;
 	}
 
 }
+
