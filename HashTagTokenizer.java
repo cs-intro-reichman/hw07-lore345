@@ -25,25 +25,14 @@ public class HashTagTokenizer {
     }
 
     public static boolean existInDictionary(String word, String[] dictionary) {
-        return existInDictionary(word, dictionary, 0);
-    }
-
-    public static boolean existInDictionary(String word, String[] dictionary, int index) {
-        { // Base case: If the index reaches the end of the dictionary, the word is not found.
-            if (index == dictionary.length) {
-                return false;
-            }
-
-            // Check if the current word at the given index is equal to the target word.
-            if (dictionary[index].equals(word)) {
+        for (int i = 0; i < dictionary.length; i++) {
+            if (dictionary[i].equals(word)) {
                 return true;
             }
-
-            // Recursively search for the word in the rest of the dictionary with an incremented index.
-            return existInDictionary(word, dictionary, index + 1);
         }
-
+        return false;
     }
+
 
     public static void breakHashTag(String hashtag, String[] dictionary) {
         // Base case: do nothing (return) if hashtag is an empty string.
