@@ -9,6 +9,7 @@ public class HashTagTokenizer {
         breakHashTag(hashTag, dictionary);
     }
 
+    
     public static String[] readDictionary(String fileName) {
         String[] dictionary = new String[3000];
         int count = 0;
